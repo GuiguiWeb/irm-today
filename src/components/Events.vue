@@ -53,8 +53,8 @@ export default {
           this.selectedDay.today = true
         }
         const params = {
-          apiKey: 'AIzaSyC7FQx8-Ut7-I1EWyvmlBBrVwXXO6nHOEo',
-          calendarId: 'a0vmbl97guovvv12aub1b6b3vk@group.calendar.google.com',
+          apiKey: process.env.VUE_APP_GOOGLE_API_KEY,
+          calendarId: process.env.VUE_APP_GOOGLE_CALENDAR_ID,
           timeMax: timeMax,
           timeMin: timeMin
         }
